@@ -9,13 +9,11 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class ConnectionPool {
 
     private final BlockingQueue<DBConnection> pool;
-    private final int poolSize;
-    private static final Logger logger = LogManager.getLogger(ConnectionPool.class.getName());
+    private static final Logger logger = LogManager.getLogger(ConnectionPool.class);
 
 
     public ConnectionPool(int poolSize) {
         pool = new LinkedBlockingQueue<>(poolSize);
-        this.poolSize = poolSize;
 
         for (int i =0; i <= poolSize; i++) {
             pool.offer(new DBConnection());

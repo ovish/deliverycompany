@@ -17,7 +17,7 @@ public class SortingCenter extends Storage {
 
     private Queue<Order> orderQueue;
     private List<Order> ordersInProcessing;
-    private static final Logger logger = LogManager.getLogger(SortingCenter.class.getName());
+    private static final Logger logger = LogManager.getLogger(SortingCenter.class);
 
     @Override
     public String getStorageType() {

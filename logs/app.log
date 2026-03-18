@@ -95,3 +95,580 @@
 2026-03-17 13:26:35.336 [Order 3] INFO  com.solvd.deliverycompany.Main - Order 3 got connection 
 2026-03-17 13:26:35.336 [Order 5] INFO  com.solvd.deliverycompany.Main - Order 5 got connection 
 2026-03-17 13:26:35.336 [Order 4] INFO  com.solvd.deliverycompany.Main - Order 4 got connection 
+2026-03-18 23:36:14.143 [main] INFO  com.solvd.deliverycompany.person.Sender - Added $150.0. New Balance: $150.0
+2026-03-18 23:36:14.145 [main] INFO  com.solvd.deliverycompany.person.Sender - Withdrawn $52.0. Remaining: $98.0
+2026-03-18 23:36:14.145 [main] INFO  com.solvd.deliverycompany.person.Sender - Payment $52.0 completed
+2026-03-18 23:36:14.145 [main] INFO  com.solvd.deliverycompany.person.Sender - Sender processed order 1
+2026-03-18 23:36:14.147 [main] WARN  com.solvd.deliverycompany.storage.Warehouse - Product for order 1 not found in warehouse
+2026-03-18 23:36:14.148 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Warehouse preparing order 1
+2026-03-18 23:36:14.148 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Order 1 released from warehouse com.solvd.storage.Warehouse
+2026-03-18 23:36:14.152 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: IN_TRANSIT
+2026-03-18 23:36:14.152 [main] INFO  com.solvd.deliverycompany.person.Courier - IN_TRANSIT
+2026-03-18 23:36:14.153 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - AT_SORTING_CENTER: Order arrived at sorting center
+2026-03-18 23:36:14.153 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - Order 1is being sorted at Central Sorting Center
+2026-03-18 23:36:14.153 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - OUT_FOR_DELIVERY: Order left sorting center
+2026-03-18 23:36:14.155 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: OUT_FOR_DELIVERY. Estimated Delivery Date: 2026-02-01
+2026-03-18 23:36:14.155 [main] INFO  com.solvd.deliverycompany.person.Courier - Order delivered to receiver Marta Nowak
+2026-03-18 23:36:14.155 [main] INFO  com.solvd.deliverycompany.person.Receiver - Order 1 confirmed by receiver
+2026-03-18 23:36:14.155 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED
+2026-03-18 23:36:14.157 [main] INFO  com.solvd.deliverycompany.delivery.Notification - Email to anna@gmail.com : Your order has been delivered
+2026-03-18 23:36:14.157 [main] INFO  com.solvd.deliverycompany.Main - Status: DELIVERED
+2026-03-18 23:36:14.157 [main] INFO  com.solvd.deliverycompany.Main - Delivery Date: 2026-02-01
+2026-03-18 23:36:14.158 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED. Estimated Delivery Date: 2026-02-01
+2026-03-18 23:36:14.159 [main] INFO  com.solvd.deliverycompany.Main - Linked List. Size: 3
+2026-03-18 23:36:14.160 [main] INFO  com.solvd.deliverycompany.Main - New List:
+2026-03-18 23:36:14.160 [main] INFO  com.solvd.deliverycompany.Main - Index 1: Order 3
+2026-03-18 23:36:14.160 [main] INFO  com.solvd.deliverycompany.Main - DELIVERED
+2026-03-18 23:36:14.161 [main] INFO  com.solvd.deliverycompany.Main - Delivered orders: 3
+2026-03-18 23:36:14.162 [main] INFO  com.solvd.deliverycompany.Main - Class name: com.solvd.deliverycompany.entities.Order
+2026-03-18 23:36:14.162 [main] INFO  com.solvd.deliverycompany.Main - Simple name: Order
+2026-03-18 23:36:14.162 [main] INFO  com.solvd.deliverycompany.Main - Package: com.solvd.deliverycompany.entities
+2026-03-18 23:36:14.162 [main] INFO  com.solvd.deliverycompany.Main - Modifiers: public
+2026-03-18 23:36:14.162 [main] INFO  com.solvd.deliverycompany.Main - Fields:
+2026-03-18 23:36:14.163 [main] INFO  com.solvd.deliverycompany.Main - private static long nextID
+2026-03-18 23:36:14.163 [main] INFO  com.solvd.deliverycompany.Main - private Long orderID
+2026-03-18 23:36:14.163 [main] INFO  com.solvd.deliverycompany.Main - private Sender sender
+2026-03-18 23:36:14.163 [main] INFO  com.solvd.deliverycompany.Main - private Receiver receiver
+2026-03-18 23:36:14.163 [main] INFO  com.solvd.deliverycompany.Main - private Product product
+2026-03-18 23:36:14.163 [main] INFO  com.solvd.deliverycompany.Main - private TrackingInfo trackingInfo
+2026-03-18 23:36:14.163 [main] INFO  com.solvd.deliverycompany.Main - private OrderStatus orderStatus
+2026-03-18 23:36:14.163 [main] INFO  com.solvd.deliverycompany.Main - private DeliveryType deliveryType
+2026-03-18 23:36:14.163 [main] INFO  com.solvd.deliverycompany.Main - private static final Logger logger
+2026-03-18 23:36:14.163 [main] INFO  com.solvd.deliverycompany.Main - Methods:
+2026-03-18 23:36:14.164 [main] INFO  com.solvd.deliverycompany.Main - public boolean equals
+2026-03-18 23:36:14.164 [main] INFO  com.solvd.deliverycompany.Main - public String toString
+2026-03-18 23:36:14.164 [main] INFO  com.solvd.deliverycompany.Main - public int hashCode
+2026-03-18 23:36:14.164 [main] INFO  com.solvd.deliverycompany.Main - public void cancel
+2026-03-18 23:36:14.164 [main] INFO  com.solvd.deliverycompany.Main - public static Long generateID
+2026-03-18 23:36:14.164 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderID
+2026-03-18 23:36:14.164 [main] INFO  com.solvd.deliverycompany.Main - public Sender getSender
+2026-03-18 23:36:14.164 [main] INFO  com.solvd.deliverycompany.Main - public void setSender
+2026-03-18 23:36:14.165 [main] INFO  com.solvd.deliverycompany.Main - public Receiver getReceiver
+2026-03-18 23:36:14.165 [main] INFO  com.solvd.deliverycompany.Main - public void setReceiver
+2026-03-18 23:36:14.165 [main] INFO  com.solvd.deliverycompany.Main - public Product getProduct
+2026-03-18 23:36:14.165 [main] INFO  com.solvd.deliverycompany.Main - public void setProduct
+2026-03-18 23:36:14.165 [main] INFO  com.solvd.deliverycompany.Main - public TrackingInfo getTrackingInfo
+2026-03-18 23:36:14.165 [main] INFO  com.solvd.deliverycompany.Main - public void setTrackingInfo
+2026-03-18 23:36:14.165 [main] INFO  com.solvd.deliverycompany.Main - public void setDeliveryType
+2026-03-18 23:36:14.165 [main] INFO  com.solvd.deliverycompany.Main - public DeliveryType getDeliveryType
+2026-03-18 23:36:14.166 [main] INFO  com.solvd.deliverycompany.Main - public void updateStatus
+2026-03-18 23:36:14.166 [main] INFO  com.solvd.deliverycompany.Main - public void track
+2026-03-18 23:36:14.166 [main] INFO  com.solvd.deliverycompany.Main - public OrderStatus getOrderStatus
+2026-03-18 23:36:14.166 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderStatus
+2026-03-18 23:36:14.166 [main] INFO  com.solvd.deliverycompany.Main - public Long getOrderID
+2026-03-18 23:36:14.166 [main] INFO  com.solvd.deliverycompany.Main - public Long getProductID
+2026-03-18 23:36:14.169 [main] INFO  com.solvd.deliverycompany.Main - Created com.solvd.entities.Order{orderID=4, sender=model.Sender{name='Anna Smith'email='anna@gmail.com', accountBalance=98.0}, receiver=model.Receiver{address=Kasztanowa 12, Krakow, 00-002}, product=null, trackingInfo=null, orderStatus='CREATED'}
+2026-03-18 23:36:14.170 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:36:14.171 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:36:14.171 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:37:07.039 [main] INFO  com.solvd.deliverycompany.person.Sender - Added $150.0. New Balance: $150.0
+2026-03-18 23:37:07.042 [main] INFO  com.solvd.deliverycompany.person.Sender - Withdrawn $52.0. Remaining: $98.0
+2026-03-18 23:37:07.043 [main] INFO  com.solvd.deliverycompany.person.Sender - Payment $52.0 completed
+2026-03-18 23:37:07.043 [main] INFO  com.solvd.deliverycompany.person.Sender - Sender processed order 1
+2026-03-18 23:37:07.045 [main] WARN  com.solvd.deliverycompany.storage.Warehouse - Product for order 1 not found in warehouse
+2026-03-18 23:37:07.045 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Warehouse preparing order 1
+2026-03-18 23:37:07.045 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Order 1 released from warehouse com.solvd.storage.Warehouse
+2026-03-18 23:37:07.048 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: IN_TRANSIT
+2026-03-18 23:37:07.049 [main] INFO  com.solvd.deliverycompany.person.Courier - IN_TRANSIT
+2026-03-18 23:37:07.050 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - AT_SORTING_CENTER: Order arrived at sorting center
+2026-03-18 23:37:07.050 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - Order 1is being sorted at Central Sorting Center
+2026-03-18 23:37:07.050 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - OUT_FOR_DELIVERY: Order left sorting center
+2026-03-18 23:37:07.051 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: OUT_FOR_DELIVERY. Estimated Delivery Date: 2026-02-01
+2026-03-18 23:37:07.052 [main] INFO  com.solvd.deliverycompany.person.Courier - Order delivered to receiver Marta Nowak
+2026-03-18 23:37:07.052 [main] INFO  com.solvd.deliverycompany.person.Receiver - Order 1 confirmed by receiver
+2026-03-18 23:37:07.052 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED
+2026-03-18 23:37:07.053 [main] INFO  com.solvd.deliverycompany.delivery.Notification - Email to anna@gmail.com : Your order has been delivered
+2026-03-18 23:37:07.054 [main] INFO  com.solvd.deliverycompany.Main - Status: DELIVERED
+2026-03-18 23:37:07.054 [main] INFO  com.solvd.deliverycompany.Main - Delivery Date: 2026-02-01
+2026-03-18 23:37:07.054 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED. Estimated Delivery Date: 2026-02-01
+2026-03-18 23:37:07.055 [main] INFO  com.solvd.deliverycompany.Main - Linked List. Size: 3
+2026-03-18 23:37:07.056 [main] INFO  com.solvd.deliverycompany.Main - New List:
+2026-03-18 23:37:07.056 [main] INFO  com.solvd.deliverycompany.Main - Index 1: Order 3
+2026-03-18 23:37:07.057 [main] INFO  com.solvd.deliverycompany.Main - DELIVERED
+2026-03-18 23:37:07.058 [main] INFO  com.solvd.deliverycompany.Main - Delivered orders: 3
+2026-03-18 23:37:07.058 [main] INFO  com.solvd.deliverycompany.Main - Class name: com.solvd.deliverycompany.entities.Order
+2026-03-18 23:37:07.058 [main] INFO  com.solvd.deliverycompany.Main - Simple name: Order
+2026-03-18 23:37:07.058 [main] INFO  com.solvd.deliverycompany.Main - Package: com.solvd.deliverycompany.entities
+2026-03-18 23:37:07.059 [main] INFO  com.solvd.deliverycompany.Main - Modifiers: public
+2026-03-18 23:37:07.059 [main] INFO  com.solvd.deliverycompany.Main - Fields:
+2026-03-18 23:37:07.059 [main] INFO  com.solvd.deliverycompany.Main - private static long nextID
+2026-03-18 23:37:07.059 [main] INFO  com.solvd.deliverycompany.Main - private Long orderID
+2026-03-18 23:37:07.059 [main] INFO  com.solvd.deliverycompany.Main - private Sender sender
+2026-03-18 23:37:07.059 [main] INFO  com.solvd.deliverycompany.Main - private Receiver receiver
+2026-03-18 23:37:07.059 [main] INFO  com.solvd.deliverycompany.Main - private Product product
+2026-03-18 23:37:07.060 [main] INFO  com.solvd.deliverycompany.Main - private TrackingInfo trackingInfo
+2026-03-18 23:37:07.060 [main] INFO  com.solvd.deliverycompany.Main - private OrderStatus orderStatus
+2026-03-18 23:37:07.060 [main] INFO  com.solvd.deliverycompany.Main - private DeliveryType deliveryType
+2026-03-18 23:37:07.060 [main] INFO  com.solvd.deliverycompany.Main - private static final Logger logger
+2026-03-18 23:37:07.060 [main] INFO  com.solvd.deliverycompany.Main - Methods:
+2026-03-18 23:37:07.060 [main] INFO  com.solvd.deliverycompany.Main - public boolean equals
+2026-03-18 23:37:07.060 [main] INFO  com.solvd.deliverycompany.Main - public String toString
+2026-03-18 23:37:07.060 [main] INFO  com.solvd.deliverycompany.Main - public int hashCode
+2026-03-18 23:37:07.061 [main] INFO  com.solvd.deliverycompany.Main - public void cancel
+2026-03-18 23:37:07.061 [main] INFO  com.solvd.deliverycompany.Main - public static Long generateID
+2026-03-18 23:37:07.061 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderID
+2026-03-18 23:37:07.061 [main] INFO  com.solvd.deliverycompany.Main - public Sender getSender
+2026-03-18 23:37:07.061 [main] INFO  com.solvd.deliverycompany.Main - public void setSender
+2026-03-18 23:37:07.061 [main] INFO  com.solvd.deliverycompany.Main - public Receiver getReceiver
+2026-03-18 23:37:07.061 [main] INFO  com.solvd.deliverycompany.Main - public void setReceiver
+2026-03-18 23:37:07.061 [main] INFO  com.solvd.deliverycompany.Main - public Product getProduct
+2026-03-18 23:37:07.061 [main] INFO  com.solvd.deliverycompany.Main - public void setProduct
+2026-03-18 23:37:07.061 [main] INFO  com.solvd.deliverycompany.Main - public TrackingInfo getTrackingInfo
+2026-03-18 23:37:07.062 [main] INFO  com.solvd.deliverycompany.Main - public DeliveryType getDeliveryType
+2026-03-18 23:37:07.062 [main] INFO  com.solvd.deliverycompany.Main - public void setDeliveryType
+2026-03-18 23:37:07.062 [main] INFO  com.solvd.deliverycompany.Main - public void setTrackingInfo
+2026-03-18 23:37:07.062 [main] INFO  com.solvd.deliverycompany.Main - public Long getOrderID
+2026-03-18 23:37:07.062 [main] INFO  com.solvd.deliverycompany.Main - public Long getProductID
+2026-03-18 23:37:07.062 [main] INFO  com.solvd.deliverycompany.Main - public void updateStatus
+2026-03-18 23:37:07.062 [main] INFO  com.solvd.deliverycompany.Main - public void track
+2026-03-18 23:37:07.062 [main] INFO  com.solvd.deliverycompany.Main - public OrderStatus getOrderStatus
+2026-03-18 23:37:07.062 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderStatus
+2026-03-18 23:37:07.066 [main] INFO  com.solvd.deliverycompany.Main - Created com.solvd.entities.Order{orderID=4, sender=model.Sender{name='Anna Smith'email='anna@gmail.com', accountBalance=98.0}, receiver=model.Receiver{address=Kasztanowa 12, Krakow, 00-002}, product=null, trackingInfo=null, orderStatus='CREATED'}
+2026-03-18 23:37:07.067 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:37:07.067 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:37:07.067 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:37:07.067 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:37:07.068 [Order 1] INFO  com.solvd.deliverycompany.Main - Order 1 got connection 
+2026-03-18 23:37:07.068 [Order 0] INFO  com.solvd.deliverycompany.Main - Order 0 got connection 
+2026-03-18 23:37:07.068 [Order 2] INFO  com.solvd.deliverycompany.Main - Order 2 got connection 
+2026-03-18 23:37:09.073 [Order 4] INFO  com.solvd.deliverycompany.Main - Order 4 got connection 
+2026-03-18 23:37:09.074 [Order 5] INFO  com.solvd.deliverycompany.Main - Order 5 got connection 
+2026-03-18 23:37:09.073 [Order 3] INFO  com.solvd.deliverycompany.Main - Order 3 got connection 
+2026-03-18 23:38:44.983 [main] INFO  com.solvd.deliverycompany.person.Sender - Added $150.0. New Balance: $150.0
+2026-03-18 23:38:44.986 [main] INFO  com.solvd.deliverycompany.person.Sender - Withdrawn $52.0. Remaining: $98.0
+2026-03-18 23:38:44.987 [main] INFO  com.solvd.deliverycompany.person.Sender - Payment $52.0 completed
+2026-03-18 23:38:44.987 [main] INFO  com.solvd.deliverycompany.person.Sender - Sender processed order 1
+2026-03-18 23:38:44.989 [main] WARN  com.solvd.deliverycompany.storage.Warehouse - Product for order 1 not found in warehouse
+2026-03-18 23:38:44.989 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Warehouse preparing order 1
+2026-03-18 23:38:44.989 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Order 1 released from warehouse com.solvd.storage.Warehouse
+2026-03-18 23:38:44.993 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: IN_TRANSIT
+2026-03-18 23:38:44.993 [main] INFO  com.solvd.deliverycompany.person.Courier - IN_TRANSIT
+2026-03-18 23:38:44.994 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - AT_SORTING_CENTER: Order arrived at sorting center
+2026-03-18 23:38:44.994 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - Order 1is being sorted at Central Sorting Center
+2026-03-18 23:38:44.995 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - OUT_FOR_DELIVERY: Order left sorting center
+2026-03-18 23:38:44.996 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: OUT_FOR_DELIVERY. Estimated Delivery Date: 2026-02-01
+2026-03-18 23:38:44.996 [main] INFO  com.solvd.deliverycompany.person.Courier - Order delivered to receiver Marta Nowak
+2026-03-18 23:38:44.996 [main] INFO  com.solvd.deliverycompany.person.Receiver - Order 1 confirmed by receiver
+2026-03-18 23:38:44.996 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED
+2026-03-18 23:38:45.000 [main] INFO  com.solvd.deliverycompany.delivery.Notification - Email to anna@gmail.com : Your order has been delivered
+2026-03-18 23:38:45.000 [main] INFO  com.solvd.deliverycompany.Main - Status: DELIVERED
+2026-03-18 23:38:45.001 [main] INFO  com.solvd.deliverycompany.Main - Delivery Date: 2026-02-01
+2026-03-18 23:38:45.001 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED. Estimated Delivery Date: 2026-02-01
+2026-03-18 23:38:45.002 [main] INFO  com.solvd.deliverycompany.Main - Linked List. Size: 3
+2026-03-18 23:38:45.003 [main] INFO  com.solvd.deliverycompany.Main - New List:
+2026-03-18 23:38:45.003 [main] INFO  com.solvd.deliverycompany.Main - Index 1: Order 3
+2026-03-18 23:38:45.003 [main] INFO  com.solvd.deliverycompany.Main - DELIVERED
+2026-03-18 23:38:45.005 [main] INFO  com.solvd.deliverycompany.Main - Delivered orders: 3
+2026-03-18 23:38:45.005 [main] INFO  com.solvd.deliverycompany.Main - Class name: com.solvd.deliverycompany.entities.Order
+2026-03-18 23:38:45.005 [main] INFO  com.solvd.deliverycompany.Main - Simple name: Order
+2026-03-18 23:38:45.006 [main] INFO  com.solvd.deliverycompany.Main - Package: com.solvd.deliverycompany.entities
+2026-03-18 23:38:45.006 [main] INFO  com.solvd.deliverycompany.Main - Modifiers: public
+2026-03-18 23:38:45.006 [main] INFO  com.solvd.deliverycompany.Main - Fields:
+2026-03-18 23:38:45.006 [main] INFO  com.solvd.deliverycompany.Main - private static long nextID
+2026-03-18 23:38:45.006 [main] INFO  com.solvd.deliverycompany.Main - private Long orderID
+2026-03-18 23:38:45.006 [main] INFO  com.solvd.deliverycompany.Main - private Sender sender
+2026-03-18 23:38:45.006 [main] INFO  com.solvd.deliverycompany.Main - private Receiver receiver
+2026-03-18 23:38:45.007 [main] INFO  com.solvd.deliverycompany.Main - private Product product
+2026-03-18 23:38:45.007 [main] INFO  com.solvd.deliverycompany.Main - private TrackingInfo trackingInfo
+2026-03-18 23:38:45.007 [main] INFO  com.solvd.deliverycompany.Main - private OrderStatus orderStatus
+2026-03-18 23:38:45.007 [main] INFO  com.solvd.deliverycompany.Main - private DeliveryType deliveryType
+2026-03-18 23:38:45.007 [main] INFO  com.solvd.deliverycompany.Main - private static final Logger logger
+2026-03-18 23:38:45.007 [main] INFO  com.solvd.deliverycompany.Main - Methods:
+2026-03-18 23:38:45.007 [main] INFO  com.solvd.deliverycompany.Main - public boolean equals
+2026-03-18 23:38:45.007 [main] INFO  com.solvd.deliverycompany.Main - public String toString
+2026-03-18 23:38:45.008 [main] INFO  com.solvd.deliverycompany.Main - public int hashCode
+2026-03-18 23:38:45.008 [main] INFO  com.solvd.deliverycompany.Main - public void cancel
+2026-03-18 23:38:45.008 [main] INFO  com.solvd.deliverycompany.Main - public static Long generateID
+2026-03-18 23:38:45.008 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderID
+2026-03-18 23:38:45.008 [main] INFO  com.solvd.deliverycompany.Main - public Sender getSender
+2026-03-18 23:38:45.008 [main] INFO  com.solvd.deliverycompany.Main - public void setSender
+2026-03-18 23:38:45.008 [main] INFO  com.solvd.deliverycompany.Main - public Receiver getReceiver
+2026-03-18 23:38:45.008 [main] INFO  com.solvd.deliverycompany.Main - public void setReceiver
+2026-03-18 23:38:45.008 [main] INFO  com.solvd.deliverycompany.Main - public Product getProduct
+2026-03-18 23:38:45.008 [main] INFO  com.solvd.deliverycompany.Main - public void setProduct
+2026-03-18 23:38:45.009 [main] INFO  com.solvd.deliverycompany.Main - public TrackingInfo getTrackingInfo
+2026-03-18 23:38:45.009 [main] INFO  com.solvd.deliverycompany.Main - public Long getOrderID
+2026-03-18 23:38:45.009 [main] INFO  com.solvd.deliverycompany.Main - public void setTrackingInfo
+2026-03-18 23:38:45.009 [main] INFO  com.solvd.deliverycompany.Main - public void setDeliveryType
+2026-03-18 23:38:45.009 [main] INFO  com.solvd.deliverycompany.Main - public DeliveryType getDeliveryType
+2026-03-18 23:38:45.009 [main] INFO  com.solvd.deliverycompany.Main - public void updateStatus
+2026-03-18 23:38:45.009 [main] INFO  com.solvd.deliverycompany.Main - public void track
+2026-03-18 23:38:45.009 [main] INFO  com.solvd.deliverycompany.Main - public OrderStatus getOrderStatus
+2026-03-18 23:38:45.009 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderStatus
+2026-03-18 23:38:45.009 [main] INFO  com.solvd.deliverycompany.Main - public Long getProductID
+2026-03-18 23:38:45.013 [main] INFO  com.solvd.deliverycompany.Main - Created com.solvd.entities.Order{orderID=4, sender=model.Sender{name='Anna Smith'email='anna@gmail.com', accountBalance=98.0}, receiver=model.Receiver{address=Kasztanowa 12, Krakow, 00-002}, product=null, trackingInfo=null, orderStatus='CREATED'}
+2026-03-18 23:38:45.014 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:38:45.014 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:38:45.014 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:38:45.014 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:38:45.015 [Order 0] INFO  com.solvd.deliverycompany.Main - Order 0 got connection 
+2026-03-18 23:38:45.015 [Order 1] INFO  com.solvd.deliverycompany.Main - Order 1 got connection 
+2026-03-18 23:38:45.015 [Order 2] INFO  com.solvd.deliverycompany.Main - Order 2 got connection 
+2026-03-18 23:38:46.220 [main] INFO  com.solvd.deliverycompany.person.Sender - Added $150.0. New Balance: $150.0
+2026-03-18 23:38:46.222 [main] INFO  com.solvd.deliverycompany.person.Sender - Withdrawn $52.0. Remaining: $98.0
+2026-03-18 23:38:46.222 [main] INFO  com.solvd.deliverycompany.person.Sender - Payment $52.0 completed
+2026-03-18 23:38:46.222 [main] INFO  com.solvd.deliverycompany.person.Sender - Sender processed order 1
+2026-03-18 23:38:46.223 [main] WARN  com.solvd.deliverycompany.storage.Warehouse - Product for order 1 not found in warehouse
+2026-03-18 23:38:46.223 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Warehouse preparing order 1
+2026-03-18 23:38:46.223 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Order 1 released from warehouse com.solvd.storage.Warehouse
+2026-03-18 23:38:46.225 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: IN_TRANSIT
+2026-03-18 23:38:46.225 [main] INFO  com.solvd.deliverycompany.person.Courier - IN_TRANSIT
+2026-03-18 23:38:46.226 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - AT_SORTING_CENTER: Order arrived at sorting center
+2026-03-18 23:38:46.226 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - Order 1is being sorted at Central Sorting Center
+2026-03-18 23:38:46.226 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - OUT_FOR_DELIVERY: Order left sorting center
+2026-03-18 23:38:46.227 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: OUT_FOR_DELIVERY. Estimated Delivery Date: 2026-02-01
+2026-03-18 23:38:46.227 [main] INFO  com.solvd.deliverycompany.person.Courier - Order delivered to receiver Marta Nowak
+2026-03-18 23:38:46.227 [main] INFO  com.solvd.deliverycompany.person.Receiver - Order 1 confirmed by receiver
+2026-03-18 23:38:46.228 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED
+2026-03-18 23:38:46.229 [main] INFO  com.solvd.deliverycompany.delivery.Notification - Email to anna@gmail.com : Your order has been delivered
+2026-03-18 23:38:46.229 [main] INFO  com.solvd.deliverycompany.Main - Status: DELIVERED
+2026-03-18 23:38:46.229 [main] INFO  com.solvd.deliverycompany.Main - Delivery Date: 2026-02-01
+2026-03-18 23:38:46.230 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED. Estimated Delivery Date: 2026-02-01
+2026-03-18 23:38:46.231 [main] INFO  com.solvd.deliverycompany.Main - Linked List. Size: 3
+2026-03-18 23:38:46.231 [main] INFO  com.solvd.deliverycompany.Main - New List:
+2026-03-18 23:38:46.231 [main] INFO  com.solvd.deliverycompany.Main - Index 1: Order 3
+2026-03-18 23:38:46.231 [main] INFO  com.solvd.deliverycompany.Main - DELIVERED
+2026-03-18 23:38:46.233 [main] INFO  com.solvd.deliverycompany.Main - Delivered orders: 3
+2026-03-18 23:38:46.233 [main] INFO  com.solvd.deliverycompany.Main - Class name: com.solvd.deliverycompany.entities.Order
+2026-03-18 23:38:46.233 [main] INFO  com.solvd.deliverycompany.Main - Simple name: Order
+2026-03-18 23:38:46.233 [main] INFO  com.solvd.deliverycompany.Main - Package: com.solvd.deliverycompany.entities
+2026-03-18 23:38:46.233 [main] INFO  com.solvd.deliverycompany.Main - Modifiers: public
+2026-03-18 23:38:46.233 [main] INFO  com.solvd.deliverycompany.Main - Fields:
+2026-03-18 23:38:46.234 [main] INFO  com.solvd.deliverycompany.Main - private static long nextID
+2026-03-18 23:38:46.234 [main] INFO  com.solvd.deliverycompany.Main - private Long orderID
+2026-03-18 23:38:46.234 [main] INFO  com.solvd.deliverycompany.Main - private Sender sender
+2026-03-18 23:38:46.234 [main] INFO  com.solvd.deliverycompany.Main - private Receiver receiver
+2026-03-18 23:38:46.234 [main] INFO  com.solvd.deliverycompany.Main - private Product product
+2026-03-18 23:38:46.234 [main] INFO  com.solvd.deliverycompany.Main - private TrackingInfo trackingInfo
+2026-03-18 23:38:46.234 [main] INFO  com.solvd.deliverycompany.Main - private OrderStatus orderStatus
+2026-03-18 23:38:46.234 [main] INFO  com.solvd.deliverycompany.Main - private DeliveryType deliveryType
+2026-03-18 23:38:46.235 [main] INFO  com.solvd.deliverycompany.Main - private static final Logger logger
+2026-03-18 23:38:46.235 [main] INFO  com.solvd.deliverycompany.Main - Methods:
+2026-03-18 23:38:46.235 [main] INFO  com.solvd.deliverycompany.Main - public boolean equals
+2026-03-18 23:38:46.235 [main] INFO  com.solvd.deliverycompany.Main - public String toString
+2026-03-18 23:38:46.235 [main] INFO  com.solvd.deliverycompany.Main - public int hashCode
+2026-03-18 23:38:46.235 [main] INFO  com.solvd.deliverycompany.Main - public void cancel
+2026-03-18 23:38:46.235 [main] INFO  com.solvd.deliverycompany.Main - public Long getProductID
+2026-03-18 23:38:46.235 [main] INFO  com.solvd.deliverycompany.Main - public void setTrackingInfo
+2026-03-18 23:38:46.235 [main] INFO  com.solvd.deliverycompany.Main - public void setDeliveryType
+2026-03-18 23:38:46.235 [main] INFO  com.solvd.deliverycompany.Main - public DeliveryType getDeliveryType
+2026-03-18 23:38:46.236 [main] INFO  com.solvd.deliverycompany.Main - public void updateStatus
+2026-03-18 23:38:46.236 [main] INFO  com.solvd.deliverycompany.Main - public void track
+2026-03-18 23:38:46.236 [main] INFO  com.solvd.deliverycompany.Main - public OrderStatus getOrderStatus
+2026-03-18 23:38:46.236 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderStatus
+2026-03-18 23:38:46.236 [main] INFO  com.solvd.deliverycompany.Main - public Long getOrderID
+2026-03-18 23:38:46.236 [main] INFO  com.solvd.deliverycompany.Main - public static Long generateID
+2026-03-18 23:38:46.236 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderID
+2026-03-18 23:38:46.236 [main] INFO  com.solvd.deliverycompany.Main - public Sender getSender
+2026-03-18 23:38:46.236 [main] INFO  com.solvd.deliverycompany.Main - public void setSender
+2026-03-18 23:38:46.237 [main] INFO  com.solvd.deliverycompany.Main - public Receiver getReceiver
+2026-03-18 23:38:46.237 [main] INFO  com.solvd.deliverycompany.Main - public void setReceiver
+2026-03-18 23:38:46.237 [main] INFO  com.solvd.deliverycompany.Main - public Product getProduct
+2026-03-18 23:38:46.237 [main] INFO  com.solvd.deliverycompany.Main - public void setProduct
+2026-03-18 23:38:46.237 [main] INFO  com.solvd.deliverycompany.Main - public TrackingInfo getTrackingInfo
+2026-03-18 23:38:46.240 [main] INFO  com.solvd.deliverycompany.Main - Created com.solvd.entities.Order{orderID=4, sender=model.Sender{name='Anna Smith'email='anna@gmail.com', accountBalance=98.0}, receiver=model.Receiver{address=Kasztanowa 12, Krakow, 00-002}, product=null, trackingInfo=null, orderStatus='CREATED'}
+2026-03-18 23:38:46.241 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:38:46.242 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:38:46.242 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:38:46.242 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-18 23:38:46.243 [Order 0] INFO  com.solvd.deliverycompany.Main - Order 0 got connection 
+2026-03-18 23:38:46.243 [Order 1] INFO  com.solvd.deliverycompany.Main - Order 1 got connection 
+2026-03-18 23:38:46.243 [Order 2] INFO  com.solvd.deliverycompany.Main - Order 2 got connection 
+2026-03-18 23:38:47.021 [Order 3] INFO  com.solvd.deliverycompany.Main - Order 3 got connection 
+2026-03-18 23:38:47.021 [Order 4] INFO  com.solvd.deliverycompany.Main - Order 4 got connection 
+2026-03-18 23:38:47.022 [Order 5] INFO  com.solvd.deliverycompany.Main - Order 5 got connection 
+2026-03-18 23:38:48.245 [Order 3] INFO  com.solvd.deliverycompany.Main - Order 3 got connection 
+2026-03-18 23:38:48.246 [Order 4] INFO  com.solvd.deliverycompany.Main - Order 4 got connection 
+2026-03-18 23:38:48.246 [Order 5] INFO  com.solvd.deliverycompany.Main - Order 5 got connection 
+2026-03-19 00:06:57.470 [main] INFO  com.solvd.deliverycompany.person.Sender - Added $150.0. New Balance: $150.0
+2026-03-19 00:06:57.473 [main] INFO  com.solvd.deliverycompany.person.Sender - Withdrawn $52.0. Remaining: $98.0
+2026-03-19 00:06:57.473 [main] INFO  com.solvd.deliverycompany.person.Sender - Payment $52.0 completed
+2026-03-19 00:06:57.474 [main] INFO  com.solvd.deliverycompany.person.Sender - Sender processed order 1
+2026-03-19 00:06:57.475 [main] WARN  com.solvd.deliverycompany.storage.Warehouse - Product for order 1 not found in warehouse
+2026-03-19 00:06:57.475 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Warehouse preparing order 1
+2026-03-19 00:06:57.476 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Order 1 released from warehouse com.solvd.storage.Warehouse
+2026-03-19 00:06:57.478 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: IN_TRANSIT
+2026-03-19 00:06:57.479 [main] INFO  com.solvd.deliverycompany.person.Courier - IN_TRANSIT
+2026-03-19 00:06:57.480 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - AT_SORTING_CENTER: Order arrived at sorting center
+2026-03-19 00:06:57.480 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - Order 1is being sorted at Central Sorting Center
+2026-03-19 00:06:57.481 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - OUT_FOR_DELIVERY: Order left sorting center
+2026-03-19 00:06:57.483 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: OUT_FOR_DELIVERY. Estimated Delivery Date: 2026-02-01
+2026-03-19 00:06:57.483 [main] INFO  com.solvd.deliverycompany.person.Courier - Order delivered to receiver Marta Nowak
+2026-03-19 00:06:57.483 [main] INFO  com.solvd.deliverycompany.person.Receiver - Order 1 confirmed by receiver
+2026-03-19 00:06:57.483 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED
+2026-03-19 00:06:57.484 [main] INFO  com.solvd.deliverycompany.delivery.Notification - Email to anna@gmail.com : Your order has been delivered
+2026-03-19 00:06:57.485 [main] INFO  com.solvd.deliverycompany.Main - Status: DELIVERED
+2026-03-19 00:06:57.485 [main] INFO  com.solvd.deliverycompany.Main - Delivery Date: 2026-02-01
+2026-03-19 00:06:57.485 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED. Estimated Delivery Date: 2026-02-01
+2026-03-19 00:06:57.487 [main] INFO  com.solvd.deliverycompany.Main - Linked List. Size: 3
+2026-03-19 00:06:57.487 [main] INFO  com.solvd.deliverycompany.Main - New List:
+2026-03-19 00:06:57.487 [main] INFO  com.solvd.deliverycompany.Main - Index 1: Order 3
+2026-03-19 00:06:57.488 [main] INFO  com.solvd.deliverycompany.Main - DELIVERED
+2026-03-19 00:06:57.490 [main] INFO  com.solvd.deliverycompany.Main - Delivered orders: 3
+2026-03-19 00:06:57.490 [main] INFO  com.solvd.deliverycompany.Main - Class name: com.solvd.deliverycompany.entities.Order
+2026-03-19 00:06:57.490 [main] INFO  com.solvd.deliverycompany.Main - Simple name: Order
+2026-03-19 00:06:57.491 [main] INFO  com.solvd.deliverycompany.Main - Package: com.solvd.deliverycompany.entities
+2026-03-19 00:06:57.491 [main] INFO  com.solvd.deliverycompany.Main - Modifiers: public
+2026-03-19 00:06:57.491 [main] INFO  com.solvd.deliverycompany.Main - Fields:
+2026-03-19 00:06:57.492 [main] INFO  com.solvd.deliverycompany.Main - private static long nextID
+2026-03-19 00:06:57.492 [main] INFO  com.solvd.deliverycompany.Main - private Long orderID
+2026-03-19 00:06:57.492 [main] INFO  com.solvd.deliverycompany.Main - private Sender sender
+2026-03-19 00:06:57.493 [main] INFO  com.solvd.deliverycompany.Main - private Receiver receiver
+2026-03-19 00:06:57.493 [main] INFO  com.solvd.deliverycompany.Main - private Product product
+2026-03-19 00:06:57.493 [main] INFO  com.solvd.deliverycompany.Main - private TrackingInfo trackingInfo
+2026-03-19 00:06:57.493 [main] INFO  com.solvd.deliverycompany.Main - private OrderStatus orderStatus
+2026-03-19 00:06:57.494 [main] INFO  com.solvd.deliverycompany.Main - private DeliveryType deliveryType
+2026-03-19 00:06:57.494 [main] INFO  com.solvd.deliverycompany.Main - private static final Logger logger
+2026-03-19 00:06:57.494 [main] INFO  com.solvd.deliverycompany.Main - Methods:
+2026-03-19 00:06:57.494 [main] INFO  com.solvd.deliverycompany.Main - public boolean equals
+2026-03-19 00:06:57.494 [main] INFO  com.solvd.deliverycompany.Main - public String toString
+2026-03-19 00:06:57.495 [main] INFO  com.solvd.deliverycompany.Main - public int hashCode
+2026-03-19 00:06:57.495 [main] INFO  com.solvd.deliverycompany.Main - public void cancel
+2026-03-19 00:06:57.495 [main] INFO  com.solvd.deliverycompany.Main - public void setTrackingInfo
+2026-03-19 00:06:57.495 [main] INFO  com.solvd.deliverycompany.Main - public void setDeliveryType
+2026-03-19 00:06:57.495 [main] INFO  com.solvd.deliverycompany.Main - public DeliveryType getDeliveryType
+2026-03-19 00:06:57.496 [main] INFO  com.solvd.deliverycompany.Main - public void updateStatus
+2026-03-19 00:06:57.496 [main] INFO  com.solvd.deliverycompany.Main - public void track
+2026-03-19 00:06:57.496 [main] INFO  com.solvd.deliverycompany.Main - public OrderStatus getOrderStatus
+2026-03-19 00:06:57.496 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderStatus
+2026-03-19 00:06:57.496 [main] INFO  com.solvd.deliverycompany.Main - public Long getOrderID
+2026-03-19 00:06:57.496 [main] INFO  com.solvd.deliverycompany.Main - public Long getProductID
+2026-03-19 00:06:57.497 [main] INFO  com.solvd.deliverycompany.Main - public static Long generateID
+2026-03-19 00:06:57.497 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderID
+2026-03-19 00:06:57.497 [main] INFO  com.solvd.deliverycompany.Main - public Sender getSender
+2026-03-19 00:06:57.497 [main] INFO  com.solvd.deliverycompany.Main - public void setSender
+2026-03-19 00:06:57.497 [main] INFO  com.solvd.deliverycompany.Main - public Receiver getReceiver
+2026-03-19 00:06:57.498 [main] INFO  com.solvd.deliverycompany.Main - public void setReceiver
+2026-03-19 00:06:57.498 [main] INFO  com.solvd.deliverycompany.Main - public Product getProduct
+2026-03-19 00:06:57.498 [main] INFO  com.solvd.deliverycompany.Main - public void setProduct
+2026-03-19 00:06:57.498 [main] INFO  com.solvd.deliverycompany.Main - public TrackingInfo getTrackingInfo
+2026-03-19 00:06:57.503 [main] INFO  com.solvd.deliverycompany.Main - Created com.solvd.entities.Order{orderID=4, sender=model.Sender{name='Anna Smith'email='anna@gmail.com', accountBalance=98.0}, receiver=model.Receiver{address=Kasztanowa 12, Krakow, 00-002}, product=null, trackingInfo=null, orderStatus='CREATED'}
+2026-03-19 00:06:57.505 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:06:57.506 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:06:57.506 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:06:57.506 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:06:57.508 [Order 0] INFO  com.solvd.deliverycompany.Main - Order 0 got connection 
+2026-03-19 00:06:57.547 [Order 1] INFO  com.solvd.deliverycompany.Main - Order 1 got connection 
+2026-03-19 00:06:57.549 [Order 2] INFO  com.solvd.deliverycompany.Main - Order 2 got connection 
+2026-03-19 00:06:59.513 [Order 3] INFO  com.solvd.deliverycompany.Main - Order 3 got connection 
+2026-03-19 00:06:59.548 [Order 4] INFO  com.solvd.deliverycompany.Main - Order 4 got connection 
+2026-03-19 00:06:59.550 [Order 5] INFO  com.solvd.deliverycompany.Main - Order 5 got connection 
+2026-03-19 00:11:54.976 [main] INFO  com.solvd.deliverycompany.person.Sender - Added $150.0. New Balance: $150.0
+2026-03-19 00:11:54.979 [main] INFO  com.solvd.deliverycompany.person.Sender - Withdrawn $52.0. Remaining: $98.0
+2026-03-19 00:11:54.979 [main] INFO  com.solvd.deliverycompany.person.Sender - Payment $52.0 completed
+2026-03-19 00:11:54.979 [main] INFO  com.solvd.deliverycompany.person.Sender - Sender processed order 1
+2026-03-19 00:11:54.981 [main] WARN  com.solvd.deliverycompany.storage.Warehouse - Product for order 1 not found in warehouse
+2026-03-19 00:11:54.981 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Warehouse preparing order 1
+2026-03-19 00:11:54.981 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Order 1 released from warehouse com.solvd.storage.Warehouse
+2026-03-19 00:11:54.984 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: IN_TRANSIT
+2026-03-19 00:11:54.984 [main] INFO  com.solvd.deliverycompany.person.Courier - IN_TRANSIT
+2026-03-19 00:11:54.985 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - AT_SORTING_CENTER: Order arrived at sorting center
+2026-03-19 00:11:54.985 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - Order 1is being sorted at Central Sorting Center
+2026-03-19 00:11:54.985 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - OUT_FOR_DELIVERY: Order left sorting center
+2026-03-19 00:11:54.987 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: OUT_FOR_DELIVERY. Estimated Delivery Date: 2026-02-01
+2026-03-19 00:11:54.987 [main] INFO  com.solvd.deliverycompany.person.Courier - Order delivered to receiver Marta Nowak
+2026-03-19 00:11:54.987 [main] INFO  com.solvd.deliverycompany.person.Receiver - Order 1 confirmed by receiver
+2026-03-19 00:11:54.987 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED
+2026-03-19 00:11:54.989 [main] INFO  com.solvd.deliverycompany.delivery.Notification - Email to anna@gmail.com : Your order has been delivered
+2026-03-19 00:11:54.989 [main] INFO  com.solvd.deliverycompany.Main - Status: DELIVERED
+2026-03-19 00:11:54.990 [main] INFO  com.solvd.deliverycompany.Main - Delivery Date: 2026-02-01
+2026-03-19 00:11:54.990 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED. Estimated Delivery Date: 2026-02-01
+2026-03-19 00:11:54.991 [main] INFO  com.solvd.deliverycompany.Main - Linked List. Size: 3
+2026-03-19 00:11:54.992 [main] INFO  com.solvd.deliverycompany.Main - New List:
+2026-03-19 00:11:54.992 [main] INFO  com.solvd.deliverycompany.Main - Index 1: Order 3
+2026-03-19 00:11:54.992 [main] INFO  com.solvd.deliverycompany.Main - DELIVERED
+2026-03-19 00:11:54.994 [main] INFO  com.solvd.deliverycompany.Main - Delivered orders: 3
+2026-03-19 00:11:54.994 [main] INFO  com.solvd.deliverycompany.Main - Class name: com.solvd.deliverycompany.entities.Order
+2026-03-19 00:11:54.994 [main] INFO  com.solvd.deliverycompany.Main - Simple name: Order
+2026-03-19 00:11:54.995 [main] INFO  com.solvd.deliverycompany.Main - Package: com.solvd.deliverycompany.entities
+2026-03-19 00:11:54.995 [main] INFO  com.solvd.deliverycompany.Main - Modifiers: public
+2026-03-19 00:11:54.995 [main] INFO  com.solvd.deliverycompany.Main - Fields:
+2026-03-19 00:11:54.995 [main] INFO  com.solvd.deliverycompany.Main - private static long nextID
+2026-03-19 00:11:54.995 [main] INFO  com.solvd.deliverycompany.Main - private Long orderID
+2026-03-19 00:11:54.995 [main] INFO  com.solvd.deliverycompany.Main - private Sender sender
+2026-03-19 00:11:54.996 [main] INFO  com.solvd.deliverycompany.Main - private Receiver receiver
+2026-03-19 00:11:54.996 [main] INFO  com.solvd.deliverycompany.Main - private Product product
+2026-03-19 00:11:54.996 [main] INFO  com.solvd.deliverycompany.Main - private TrackingInfo trackingInfo
+2026-03-19 00:11:54.996 [main] INFO  com.solvd.deliverycompany.Main - private OrderStatus orderStatus
+2026-03-19 00:11:54.996 [main] INFO  com.solvd.deliverycompany.Main - private DeliveryType deliveryType
+2026-03-19 00:11:54.996 [main] INFO  com.solvd.deliverycompany.Main - private static final Logger logger
+2026-03-19 00:11:54.996 [main] INFO  com.solvd.deliverycompany.Main - Methods:
+2026-03-19 00:11:54.996 [main] INFO  com.solvd.deliverycompany.Main - public boolean equals
+2026-03-19 00:11:54.997 [main] INFO  com.solvd.deliverycompany.Main - public String toString
+2026-03-19 00:11:54.997 [main] INFO  com.solvd.deliverycompany.Main - public int hashCode
+2026-03-19 00:11:54.997 [main] INFO  com.solvd.deliverycompany.Main - public void cancel
+2026-03-19 00:11:54.997 [main] INFO  com.solvd.deliverycompany.Main - public void setTrackingInfo
+2026-03-19 00:11:54.997 [main] INFO  com.solvd.deliverycompany.Main - public void setDeliveryType
+2026-03-19 00:11:54.997 [main] INFO  com.solvd.deliverycompany.Main - public DeliveryType getDeliveryType
+2026-03-19 00:11:54.997 [main] INFO  com.solvd.deliverycompany.Main - public void updateStatus
+2026-03-19 00:11:54.998 [main] INFO  com.solvd.deliverycompany.Main - public void track
+2026-03-19 00:11:54.998 [main] INFO  com.solvd.deliverycompany.Main - public OrderStatus getOrderStatus
+2026-03-19 00:11:54.998 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderStatus
+2026-03-19 00:11:54.998 [main] INFO  com.solvd.deliverycompany.Main - public Long getOrderID
+2026-03-19 00:11:54.998 [main] INFO  com.solvd.deliverycompany.Main - public Long getProductID
+2026-03-19 00:11:54.998 [main] INFO  com.solvd.deliverycompany.Main - public static Long generateID
+2026-03-19 00:11:54.998 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderID
+2026-03-19 00:11:54.998 [main] INFO  com.solvd.deliverycompany.Main - public Sender getSender
+2026-03-19 00:11:54.998 [main] INFO  com.solvd.deliverycompany.Main - public void setSender
+2026-03-19 00:11:54.999 [main] INFO  com.solvd.deliverycompany.Main - public Receiver getReceiver
+2026-03-19 00:11:54.999 [main] INFO  com.solvd.deliverycompany.Main - public void setReceiver
+2026-03-19 00:11:54.999 [main] INFO  com.solvd.deliverycompany.Main - public Product getProduct
+2026-03-19 00:11:54.999 [main] INFO  com.solvd.deliverycompany.Main - public void setProduct
+2026-03-19 00:11:54.999 [main] INFO  com.solvd.deliverycompany.Main - public TrackingInfo getTrackingInfo
+2026-03-19 00:11:55.002 [main] INFO  com.solvd.deliverycompany.Main - Created com.solvd.entities.Order{orderID=4, sender=model.Sender{name='Anna Smith'email='anna@gmail.com', accountBalance=98.0}, receiver=model.Receiver{address=Kasztanowa 12, Krakow, 00-002}, product=null, trackingInfo=null, orderStatus='CREATED'}
+2026-03-19 00:11:55.004 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:11:55.004 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:11:55.005 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:11:55.005 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:11:55.006 [Order 0] INFO  com.solvd.deliverycompany.Main - Order 0 got connection 
+2026-03-19 00:11:55.036 [Order 1] INFO  com.solvd.deliverycompany.Main - Order 1 got connection 
+2026-03-19 00:11:55.037 [Order 2] INFO  com.solvd.deliverycompany.Main - Order 2 got connection 
+2026-03-19 00:11:57.011 [Order 3] INFO  com.solvd.deliverycompany.Main - Order 3 got connection 
+2026-03-19 00:11:57.040 [Order 4] INFO  com.solvd.deliverycompany.Main - Order 4 got connection 
+2026-03-19 00:11:57.041 [Order 5] INFO  com.solvd.deliverycompany.Main - Order 5 got connection 
+2026-03-19 00:13:07.322 [main] INFO  com.solvd.deliverycompany.person.Sender - Added $150.0. New Balance: $150.0
+2026-03-19 00:13:07.324 [main] INFO  com.solvd.deliverycompany.person.Sender - Withdrawn $52.0. Remaining: $98.0
+2026-03-19 00:13:07.324 [main] INFO  com.solvd.deliverycompany.person.Sender - Payment $52.0 completed
+2026-03-19 00:13:07.325 [main] INFO  com.solvd.deliverycompany.person.Sender - Sender processed order 1
+2026-03-19 00:13:07.326 [main] WARN  com.solvd.deliverycompany.storage.Warehouse - Product for order 1 not found in warehouse
+2026-03-19 00:13:07.327 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Warehouse preparing order 1
+2026-03-19 00:13:07.327 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Order 1 released from warehouse com.solvd.storage.Warehouse
+2026-03-19 00:13:07.329 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: IN_TRANSIT
+2026-03-19 00:13:07.330 [main] INFO  com.solvd.deliverycompany.person.Courier - IN_TRANSIT
+2026-03-19 00:13:07.331 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - AT_SORTING_CENTER: Order arrived at sorting center
+2026-03-19 00:13:07.331 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - Order 1is being sorted at Central Sorting Center
+2026-03-19 00:13:07.331 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - OUT_FOR_DELIVERY: Order left sorting center
+2026-03-19 00:13:07.332 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: OUT_FOR_DELIVERY. Estimated Delivery Date: 2026-02-01
+2026-03-19 00:13:07.333 [main] INFO  com.solvd.deliverycompany.person.Courier - Order delivered to receiver Marta Nowak
+2026-03-19 00:13:07.333 [main] INFO  com.solvd.deliverycompany.person.Receiver - Order 1 confirmed by receiver
+2026-03-19 00:13:07.333 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED
+2026-03-19 00:13:07.335 [main] INFO  com.solvd.deliverycompany.delivery.Notification - Email to anna@gmail.com : Your order has been delivered
+2026-03-19 00:13:07.336 [main] INFO  com.solvd.deliverycompany.Main - Status: DELIVERED
+2026-03-19 00:13:07.336 [main] INFO  com.solvd.deliverycompany.Main - Delivery Date: 2026-02-01
+2026-03-19 00:13:07.336 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED. Estimated Delivery Date: 2026-02-01
+2026-03-19 00:13:07.339 [main] INFO  com.solvd.deliverycompany.Main - Linked List. Size: 3
+2026-03-19 00:13:07.339 [main] INFO  com.solvd.deliverycompany.Main - New List:
+2026-03-19 00:13:07.340 [main] INFO  com.solvd.deliverycompany.Main - Index 1: Order 3
+2026-03-19 00:13:07.341 [main] INFO  com.solvd.deliverycompany.Main - DELIVERED
+2026-03-19 00:13:07.343 [main] INFO  com.solvd.deliverycompany.Main - Delivered orders: 3
+2026-03-19 00:13:07.343 [main] INFO  com.solvd.deliverycompany.Main - Class name: com.solvd.deliverycompany.entities.Order
+2026-03-19 00:13:07.344 [main] INFO  com.solvd.deliverycompany.Main - Simple name: Order
+2026-03-19 00:13:07.344 [main] INFO  com.solvd.deliverycompany.Main - Package: com.solvd.deliverycompany.entities
+2026-03-19 00:13:07.344 [main] INFO  com.solvd.deliverycompany.Main - Modifiers: public
+2026-03-19 00:13:07.344 [main] INFO  com.solvd.deliverycompany.Main - Fields:
+2026-03-19 00:13:07.345 [main] INFO  com.solvd.deliverycompany.Main - private static long nextID
+2026-03-19 00:13:07.345 [main] INFO  com.solvd.deliverycompany.Main - private Long orderID
+2026-03-19 00:13:07.345 [main] INFO  com.solvd.deliverycompany.Main - private Sender sender
+2026-03-19 00:13:07.345 [main] INFO  com.solvd.deliverycompany.Main - private Receiver receiver
+2026-03-19 00:13:07.345 [main] INFO  com.solvd.deliverycompany.Main - private Product product
+2026-03-19 00:13:07.345 [main] INFO  com.solvd.deliverycompany.Main - private TrackingInfo trackingInfo
+2026-03-19 00:13:07.345 [main] INFO  com.solvd.deliverycompany.Main - private OrderStatus orderStatus
+2026-03-19 00:13:07.346 [main] INFO  com.solvd.deliverycompany.Main - private DeliveryType deliveryType
+2026-03-19 00:13:07.346 [main] INFO  com.solvd.deliverycompany.Main - private static final Logger logger
+2026-03-19 00:13:07.346 [main] INFO  com.solvd.deliverycompany.Main - Methods:
+2026-03-19 00:13:07.346 [main] INFO  com.solvd.deliverycompany.Main - public boolean equals
+2026-03-19 00:13:07.346 [main] INFO  com.solvd.deliverycompany.Main - public String toString
+2026-03-19 00:13:07.346 [main] INFO  com.solvd.deliverycompany.Main - public int hashCode
+2026-03-19 00:13:07.346 [main] INFO  com.solvd.deliverycompany.Main - public void cancel
+2026-03-19 00:13:07.347 [main] INFO  com.solvd.deliverycompany.Main - public void setTrackingInfo
+2026-03-19 00:13:07.347 [main] INFO  com.solvd.deliverycompany.Main - public void setDeliveryType
+2026-03-19 00:13:07.347 [main] INFO  com.solvd.deliverycompany.Main - public DeliveryType getDeliveryType
+2026-03-19 00:13:07.347 [main] INFO  com.solvd.deliverycompany.Main - public void updateStatus
+2026-03-19 00:13:07.347 [main] INFO  com.solvd.deliverycompany.Main - public void track
+2026-03-19 00:13:07.347 [main] INFO  com.solvd.deliverycompany.Main - public OrderStatus getOrderStatus
+2026-03-19 00:13:07.348 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderStatus
+2026-03-19 00:13:07.348 [main] INFO  com.solvd.deliverycompany.Main - public Long getOrderID
+2026-03-19 00:13:07.348 [main] INFO  com.solvd.deliverycompany.Main - public Long getProductID
+2026-03-19 00:13:07.348 [main] INFO  com.solvd.deliverycompany.Main - public static Long generateID
+2026-03-19 00:13:07.348 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderID
+2026-03-19 00:13:07.348 [main] INFO  com.solvd.deliverycompany.Main - public Sender getSender
+2026-03-19 00:13:07.348 [main] INFO  com.solvd.deliverycompany.Main - public void setSender
+2026-03-19 00:13:07.348 [main] INFO  com.solvd.deliverycompany.Main - public Receiver getReceiver
+2026-03-19 00:13:07.349 [main] INFO  com.solvd.deliverycompany.Main - public void setReceiver
+2026-03-19 00:13:07.349 [main] INFO  com.solvd.deliverycompany.Main - public Product getProduct
+2026-03-19 00:13:07.349 [main] INFO  com.solvd.deliverycompany.Main - public void setProduct
+2026-03-19 00:13:07.349 [main] INFO  com.solvd.deliverycompany.Main - public TrackingInfo getTrackingInfo
+2026-03-19 00:13:07.352 [main] INFO  com.solvd.deliverycompany.Main - Created com.solvd.entities.Order{orderID=4, sender=model.Sender{name='Anna Smith'email='anna@gmail.com', accountBalance=98.0}, receiver=model.Receiver{address=Kasztanowa 12, Krakow, 00-002}, product=null, trackingInfo=null, orderStatus='CREATED'}
+2026-03-19 00:13:07.354 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:13:07.355 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:13:07.355 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:13:07.356 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:13:07.359 [Order 0] INFO  com.solvd.deliverycompany.Main - Order 0 got connection 
+2026-03-19 00:13:07.387 [Order 1] INFO  com.solvd.deliverycompany.Main - Order 1 got connection 
+2026-03-19 00:13:07.388 [Order 2] INFO  com.solvd.deliverycompany.Main - Order 2 got connection 
+2026-03-19 00:13:09.361 [Order 3] INFO  com.solvd.deliverycompany.Main - Order 3 got connection 
+2026-03-19 00:13:09.391 [Order 4] INFO  com.solvd.deliverycompany.Main - Order 4 got connection 
+2026-03-19 00:13:09.391 [Order 5] INFO  com.solvd.deliverycompany.Main - Order 5 got connection 
+2026-03-19 00:15:03.436 [main] INFO  com.solvd.deliverycompany.person.Sender - Added $150.0. New Balance: $150.0
+2026-03-19 00:15:03.438 [main] INFO  com.solvd.deliverycompany.person.Sender - Withdrawn $52.0. Remaining: $98.0
+2026-03-19 00:15:03.438 [main] INFO  com.solvd.deliverycompany.person.Sender - Payment $52.0 completed
+2026-03-19 00:15:03.439 [main] INFO  com.solvd.deliverycompany.person.Sender - Sender processed order 1
+2026-03-19 00:15:03.440 [main] WARN  com.solvd.deliverycompany.storage.Warehouse - Product for order 1 not found in warehouse
+2026-03-19 00:15:03.440 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Warehouse preparing order 1
+2026-03-19 00:15:03.441 [main] INFO  com.solvd.deliverycompany.storage.Warehouse - Order 1 released from warehouse com.solvd.storage.Warehouse
+2026-03-19 00:15:03.443 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: IN_TRANSIT
+2026-03-19 00:15:03.443 [main] INFO  com.solvd.deliverycompany.person.Courier - IN_TRANSIT
+2026-03-19 00:15:03.444 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - AT_SORTING_CENTER: Order arrived at sorting center
+2026-03-19 00:15:03.444 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - Order 1is being sorted at Central Sorting Center
+2026-03-19 00:15:03.444 [main] INFO  com.solvd.deliverycompany.storage.SortingCenter - OUT_FOR_DELIVERY: Order left sorting center
+2026-03-19 00:15:03.445 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: OUT_FOR_DELIVERY. Estimated Delivery Date: 2026-02-01
+2026-03-19 00:15:03.446 [main] INFO  com.solvd.deliverycompany.person.Courier - Order delivered to receiver Marta Nowak
+2026-03-19 00:15:03.446 [main] INFO  com.solvd.deliverycompany.person.Receiver - Order 1 confirmed by receiver
+2026-03-19 00:15:03.446 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED
+2026-03-19 00:15:03.448 [main] INFO  com.solvd.deliverycompany.delivery.Notification - Email to anna@gmail.com : Your order has been delivered
+2026-03-19 00:15:03.448 [main] INFO  com.solvd.deliverycompany.Main - Status: DELIVERED
+2026-03-19 00:15:03.448 [main] INFO  com.solvd.deliverycompany.Main - Delivery Date: 2026-02-01
+2026-03-19 00:15:03.448 [main] INFO  com.solvd.deliverycompany.entities.Order - Order 1 orderStatus: DELIVERED. Estimated Delivery Date: 2026-02-01
+2026-03-19 00:15:03.450 [main] INFO  com.solvd.deliverycompany.Main - Linked List. Size: 3
+2026-03-19 00:15:03.450 [main] INFO  com.solvd.deliverycompany.Main - New List:
+2026-03-19 00:15:03.450 [main] INFO  com.solvd.deliverycompany.Main - Index 1: Order 3
+2026-03-19 00:15:03.451 [main] INFO  com.solvd.deliverycompany.Main - DELIVERED
+2026-03-19 00:15:03.453 [main] INFO  com.solvd.deliverycompany.Main - Delivered orders: 3
+2026-03-19 00:15:03.453 [main] INFO  com.solvd.deliverycompany.Main - Class name: com.solvd.deliverycompany.entities.Order
+2026-03-19 00:15:03.453 [main] INFO  com.solvd.deliverycompany.Main - Simple name: Order
+2026-03-19 00:15:03.453 [main] INFO  com.solvd.deliverycompany.Main - Package: com.solvd.deliverycompany.entities
+2026-03-19 00:15:03.454 [main] INFO  com.solvd.deliverycompany.Main - Modifiers: public
+2026-03-19 00:15:03.454 [main] INFO  com.solvd.deliverycompany.Main - Fields:
+2026-03-19 00:15:03.454 [main] INFO  com.solvd.deliverycompany.Main - private static long nextID
+2026-03-19 00:15:03.454 [main] INFO  com.solvd.deliverycompany.Main - private Long orderID
+2026-03-19 00:15:03.454 [main] INFO  com.solvd.deliverycompany.Main - private Sender sender
+2026-03-19 00:15:03.454 [main] INFO  com.solvd.deliverycompany.Main - private Receiver receiver
+2026-03-19 00:15:03.455 [main] INFO  com.solvd.deliverycompany.Main - private Product product
+2026-03-19 00:15:03.455 [main] INFO  com.solvd.deliverycompany.Main - private TrackingInfo trackingInfo
+2026-03-19 00:15:03.455 [main] INFO  com.solvd.deliverycompany.Main - private OrderStatus orderStatus
+2026-03-19 00:15:03.455 [main] INFO  com.solvd.deliverycompany.Main - private DeliveryType deliveryType
+2026-03-19 00:15:03.455 [main] INFO  com.solvd.deliverycompany.Main - private static final Logger logger
+2026-03-19 00:15:03.455 [main] INFO  com.solvd.deliverycompany.Main - Methods:
+2026-03-19 00:15:03.456 [main] INFO  com.solvd.deliverycompany.Main - public boolean equals
+2026-03-19 00:15:03.456 [main] INFO  com.solvd.deliverycompany.Main - public String toString
+2026-03-19 00:15:03.456 [main] INFO  com.solvd.deliverycompany.Main - public int hashCode
+2026-03-19 00:15:03.456 [main] INFO  com.solvd.deliverycompany.Main - public void cancel
+2026-03-19 00:15:03.456 [main] INFO  com.solvd.deliverycompany.Main - public Long getOrderID
+2026-03-19 00:15:03.456 [main] INFO  com.solvd.deliverycompany.Main - public void setTrackingInfo
+2026-03-19 00:15:03.456 [main] INFO  com.solvd.deliverycompany.Main - public void setDeliveryType
+2026-03-19 00:15:03.456 [main] INFO  com.solvd.deliverycompany.Main - public DeliveryType getDeliveryType
+2026-03-19 00:15:03.457 [main] INFO  com.solvd.deliverycompany.Main - public void updateStatus
+2026-03-19 00:15:03.457 [main] INFO  com.solvd.deliverycompany.Main - public void track
+2026-03-19 00:15:03.457 [main] INFO  com.solvd.deliverycompany.Main - public OrderStatus getOrderStatus
+2026-03-19 00:15:03.457 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderStatus
+2026-03-19 00:15:03.457 [main] INFO  com.solvd.deliverycompany.Main - public Long getProductID
+2026-03-19 00:15:03.457 [main] INFO  com.solvd.deliverycompany.Main - public static Long generateID
+2026-03-19 00:15:03.457 [main] INFO  com.solvd.deliverycompany.Main - public void setOrderID
+2026-03-19 00:15:03.458 [main] INFO  com.solvd.deliverycompany.Main - public Sender getSender
+2026-03-19 00:15:03.458 [main] INFO  com.solvd.deliverycompany.Main - public void setSender
+2026-03-19 00:15:03.458 [main] INFO  com.solvd.deliverycompany.Main - public Receiver getReceiver
+2026-03-19 00:15:03.458 [main] INFO  com.solvd.deliverycompany.Main - public void setReceiver
+2026-03-19 00:15:03.458 [main] INFO  com.solvd.deliverycompany.Main - public Product getProduct
+2026-03-19 00:15:03.458 [main] INFO  com.solvd.deliverycompany.Main - public void setProduct
+2026-03-19 00:15:03.458 [main] INFO  com.solvd.deliverycompany.Main - public TrackingInfo getTrackingInfo
+2026-03-19 00:15:03.461 [main] INFO  com.solvd.deliverycompany.Main - Created com.solvd.entities.Order{orderID=4, sender=model.Sender{name='Anna Smith'email='anna@gmail.com', accountBalance=98.0}, receiver=model.Receiver{address=Kasztanowa 12, Krakow, 00-002}, product=null, trackingInfo=null, orderStatus='CREATED'}
+2026-03-19 00:15:03.463 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:15:03.463 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:15:03.463 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:15:03.464 [main] INFO  com.solvd.deliverycompany.utilities.ConnectionPool - Connection Pool created
+2026-03-19 00:15:03.464 [Order 0] INFO  com.solvd.deliverycompany.Main - Order 0 got connection 
+2026-03-19 00:15:03.492 [Order 1] INFO  com.solvd.deliverycompany.Main - Order 1 got connection 
+2026-03-19 00:15:03.494 [Order 2] INFO  com.solvd.deliverycompany.Main - Order 2 got connection 
+2026-03-19 00:15:05.469 [Order 3] INFO  com.solvd.deliverycompany.Main - Order 3 got connection 
+2026-03-19 00:15:05.498 [Order 4] INFO  com.solvd.deliverycompany.Main - Order 4 got connection 
+2026-03-19 00:15:05.498 [Order 5] INFO  com.solvd.deliverycompany.Main - Order 5 got connection 

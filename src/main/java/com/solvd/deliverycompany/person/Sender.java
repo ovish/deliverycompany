@@ -14,7 +14,7 @@ public class Sender extends DeliveryParty implements Payable {
 
     private String email;
     private Double accountBalance;
-    private static final Logger logger = LogManager.getLogger(Sender.class.getName());
+    private static final Logger logger = LogManager.getLogger(Sender.class);
 
 
     @Override

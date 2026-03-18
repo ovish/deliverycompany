@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 public class Courier extends Employee implements Deliverable {
 
     private Vehicle vehicle;
-    private static final Logger logger = LogManager.getLogger(Courier.class.getName());
+    private static final Logger logger = LogManager.getLogger(Courier.class);
 
 
     public Courier() {};

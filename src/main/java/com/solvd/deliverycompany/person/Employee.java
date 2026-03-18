@@ -7,7 +7,7 @@ public abstract class Employee extends Person {
 
     private Long employeeId;
     private String position;
-    private static final Logger logger = LogManager.getLogger(Employee.class.getName());
+    private static final Logger logger = LogManager.getLogger(Employee.class);
 
 
     public Employee () {}

@@ -9,7 +9,7 @@ import java.util.Objects;
 
 public class Receiver extends DeliveryParty {
 
-    private static final Logger logger = LogManager.getLogger(Receiver.class.getName());
+    private static final Logger logger = LogManager.getLogger(Receiver.class);
 
 
     public Receiver() {}

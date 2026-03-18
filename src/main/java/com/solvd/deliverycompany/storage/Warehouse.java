@@ -20,7 +20,7 @@ public class Warehouse extends Storage {
 
     private List<Order> storedOrders;
     private Map<Long, Product> products;
-    private static final Logger logger = LogManager.getLogger(Warehouse.class.getName());
+    private static final Logger logger = LogManager.getLogger(Warehouse.class);
 
    @Override
    public String getStorageType() {

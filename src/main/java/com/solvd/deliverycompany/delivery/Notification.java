@@ -12,7 +12,7 @@ public class Notification implements Notifiable {
 
     private String type;
     private String message;
-    private static final Logger logger = LogManager.getLogger(Notification.class.getName());
+    private static final Logger logger = LogManager.getLogger(Notification.class);
 
 
     public Notification() {}

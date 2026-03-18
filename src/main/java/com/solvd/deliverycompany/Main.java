@@ -13,6 +13,7 @@ import com.solvd.deliverycompany.storage.SortingCenter;
 import com.solvd.deliverycompany.storage.Storage;
 import com.solvd.deliverycompany.storage.Warehouse;
 import com.solvd.deliverycompany.utilities.MyLinkedList;
+import com.solvd.deliverycompany.utilities.WordCounter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -196,6 +197,10 @@ public class Main {
                 };
                 for (int i = 0; i < 6; i++) {
                         new Thread(task, "Order " + i).start();
+
+
+
+                        WordCounter.countWords("input.txt", "output.txt");
                 }
 
 
