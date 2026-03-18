@@ -15,7 +15,7 @@ public class ConnectionPool {
     public ConnectionPool(int poolSize) {
         pool = new LinkedBlockingQueue<>(poolSize);
 
-        for (int i =0; i <= poolSize; i++) {
+        for (int i =0; i < poolSize; i++) {
             pool.offer(new DBConnection());
             logger.info("Connection Pool created");
 
