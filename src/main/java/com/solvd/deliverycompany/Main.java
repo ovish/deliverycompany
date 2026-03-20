@@ -197,11 +197,10 @@ public class Main {
                 };
                 for (int i = 0; i < 6; i++) {
                         new Thread(task, "Order " + i).start();
-
-
-
-                        WordCounter.countWords("input.txt", "output.txt");
                 }
+
+
+                WordCounter.countWords("input.txt", "output.txt");
 
 
 
