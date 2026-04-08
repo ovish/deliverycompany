@@ -182,7 +182,7 @@ public class Main {
 
 
                 //Connection Pool
-                ConnectionPool pool = new ConnectionPool(3);
+                ConnectionPool pool = ConnectionPool.getInstance();
                 Runnable task = () -> {
                         try {
                                 DBConnection connection = pool.getConnection();
